@@ -38,7 +38,8 @@ spec:
             description: Pick one of the GitHub Repositories
             placeholder: "Choose a Repository"
             path: https://idp.harness.io/tCiMFV38S6GTNvXuWIDWcw/idp/api/catalog/entities
-            valueSelector: metadata.annotations            
+            arraySelector: "items.metadata"
+            valueSelector: "namespace"
         # This field is hidden but needed to authenticate the request to trigger the pipeline
         token:
           title: Harness Token
